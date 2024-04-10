@@ -65,7 +65,7 @@ COPY ./requirements.txt .
 RUN pip install -r requirements.txt
 
 # copy project
-COPY ..
+COPY . .
 ```
 
 So, we started with a slim-buster-based Docker image for Python 3. We then set a working directory along with two environment variables:
